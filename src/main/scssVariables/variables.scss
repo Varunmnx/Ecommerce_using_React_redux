@@ -1,0 +1,31 @@
+$Header_color: #0f2f56;
+$Unavailable:#0fc2fc;
+
+@mixin breakpoint($point){
+    @if $point==md{
+        //for 670 minimum starting from 720
+       @media (max-width: 840px) {
+              @content;
+       }
+    } 
+
+   @else if $point == sm{
+      @media (max-width: 500px){
+        @content
+      }     
+   }
+  
+   @else if $point == mdu{
+      @media (min-width: 840px) {
+         @content;
+  }
+   }
+
+}
+
+@mixin absolute-center() {
+   position:absolute;
+   left:50%;
+   top:50%;
+   transform:translate(-50%,-50%);
+ }

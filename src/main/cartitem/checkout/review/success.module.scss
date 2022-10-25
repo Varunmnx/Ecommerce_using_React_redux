@@ -1,0 +1,23 @@
+.successcontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    button{
+        height: 70px;
+        width: auto;
+        background-color: aqua;
+        border: none;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-top:50px !important ;
+        color: white;
+        padding: 10px !important;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: chartreuse;
+        font-weight: 700;
+        margin-top: 30px !important;
+    }
+}

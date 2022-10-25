@@ -1,0 +1,17 @@
+@import "../scssVariables/variables.scss";
+
+.NoElementContainer{
+    min-height: 100vh;
+    width: 100%;
+    background-color:$Unavailable ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        color: white;
+    }
+    h1:after{
+        content:" !....";
+    }
+}

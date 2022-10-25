@@ -1,0 +1,73 @@
+@import "../../scssVariables/variables.scss";
+
+.Detailed{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.cardContainer{
+    height: 500px;
+    max-width: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 30px 30px 30px 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s;
+    &:hover{
+         transform: scale(1.03);
+    }
+    
+    span{
+        font-size: 1.3em;
+    }
+
+    img{
+        max-height: 200px;
+        max-width:80%;
+        width: 100%;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: #ff9900;
+        margin: 10px 10px 10px 10px !important;
+        font-weight: 600;
+        border: 1px solid;
+        margin-top: 100px !important;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+    .Title_Des{
+        width: 80%;
+        min-height: 20%;
+       
+    }
+}
+.Detailed_subWrapper{
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.goBack{
+    position: absolute;
+    top: 30px;
+    left: 81px;
+    font-size: 2em;
+    color: #ff9900;
+    @include breakpoint(md){
+        left: 20px;
+    }
+}
